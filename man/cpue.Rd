@@ -17,7 +17,7 @@ cpue(catch, effort, gear_factor = 1)
 A numeric vector of CPUE
 }
 \description{
-Calculate catch per unit effort (CPUE)
+Calculates CPUE from catch and effort data, with optional gear standardization.
 }
 \examples{
 cpue(100,10)
