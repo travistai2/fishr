@@ -16,11 +16,11 @@ biomass_index(
 \arguments{
 \item{cpue}{Numeric vector of CPUE values}
 
-\item{area_swept}{Numeric vector of area swept (e.g., km^2)}
+\item{area_swept}{Numeric vector of area swept (e.g., \strong{km^2^})}
 
-\item{catch}{Numeric vector of catch}
+\item{catch}{Numeric vector of catch (e.g. \strong{kg})}
 
-\item{effort}{Numeric vector of effort}
+\item{effort}{Numeric vector of effort (e.g. \strong{hours})}
 
 \item{verbose}{Logical, indicating whether to print processing messages (default is FALSE, also accepts value of \code{fishr.verbose})}
 
@@ -28,16 +28,26 @@ biomass_index(
   Arguments passed on to \code{\link[=cpue]{cpue}}
   \describe{
     \item{\code{gear_factor}}{Numeric adjustment for gear standardize}
-    \item{\code{method}}{Character; one of "ratio" or "log"}
+    \item{\code{method}}{Character; one of \code{"ratio"} or \code{"log"}}
   }}
 }
 \value{
 A numeric vector of biomass index values
 }
 \description{
-Calculates biomass from cpue and area fished
+Calculates biomass from cpue and area fished.
+}
+\details{
+Two modes of use
+\itemize{
+\item Provide \code{cpue} directly
+\item Provide \code{catch} and \code{effort} separately
+}
 }
 \examples{
 salmon_cpue <- cpue(catch = 2, effort = 2)
 biomass_index(salmon_cpue, 5)
+}
+\seealso{
+See \code{\link[=cpue]{cpue()}} for more details.
 }
