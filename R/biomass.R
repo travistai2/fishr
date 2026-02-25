@@ -15,7 +15,7 @@
 #' salmon_cpue <- cpue(catch = 2, effort = 2)
 #' biomass_index(salmon_cpue, 5)
 biomass_index <- function(cpue = NULL, area_swept, catch = NULL, effort = NULL, ...) {
-
+  rlang::check_dots_used()
   if (is.null(cpue) && (!is.null(catch) && !is.null(effort))) {
     cpue <- cpue(catch, effort, ...)
   }
