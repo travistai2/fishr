@@ -18,9 +18,9 @@ biomass_index(
 
 \item{area_swept}{Numeric vector of area swept (e.g., km^2)}
 
-\item{catch}{catch value numeric}
+\item{catch}{Numeric vector of catch}
 
-\item{effort}{effort value numeric}
+\item{effort}{Numeric vector of effort}
 
 \item{verbose}{Logical, indicating whether to print processing messages (default is FALSE, also accepts value of \code{fishr.verbose})}
 
