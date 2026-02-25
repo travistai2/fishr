@@ -13,7 +13,7 @@ cpue(catch, effort, gear_factor = 1, verbose = FALSE)
 
 \item{gear_factor}{Numeric adjustment for gear standardize}
 
-\item{verbose}{}
+\item{verbose}{Logical, indicating size of data processed}
 }
 \value{
 A numeric vector of CPUE
