@@ -72,3 +72,15 @@ test_that("cpue warns when vector lengths don't match", {
 
   expect_no_warning(cpue(100, 20))
 })
+
+test_that("cpue uses verbosity when option set to TRUE", {
+  withr::local_options(fishr.verbose = TRUE) # reset when this block exits
+
+  expect_snapshot(cpue(100, 10))
+})
+
+test_that("cpue is not verbose when option set to FALSE", {
+  withr::local_options(fishr.verbose = FALSE) # reset when this block exits
+
+  expect_silent(cpue(100, 10))
+})
