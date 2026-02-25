@@ -14,3 +14,12 @@
       Error in `cpue * area_swept`:
       ! non-numeric argument to binary operator
 
+# biomass_index uses verbosity when option set to TRUE
+
+    Code
+      biomass_index(10, 5)
+    Message
+      Processing 1 records
+    Output
+      [1] 50
+
