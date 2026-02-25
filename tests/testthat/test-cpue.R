@@ -67,3 +67,9 @@ test_that("cpue errors when input is not numeric", {
   )
 })
 
+test_that("cpue warns when vector lengths don't match", {
+
+  expect_snapshot(cpue(c(100, 200, 300), c(10, 20)))
+
+  expect_no_warning(cpue(c(100, 200, 300), c(10, 20)))
+})
