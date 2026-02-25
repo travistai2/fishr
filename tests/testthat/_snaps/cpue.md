@@ -10,8 +10,6 @@
 
     Code
       cpue(c(100, 200, 300), c(10, 20))
-    Message
-      Processing 3 records
     Condition
       Warning in `catch / effort`:
       longer object length is not a multiple of shorter object length
