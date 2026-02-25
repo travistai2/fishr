@@ -4,7 +4,14 @@
 \alias{biomass_index}
 \title{Calculate biomass index}
 \usage{
-biomass_index(cpue = NULL, area_swept, catch = NULL, effort = NULL, ...)
+biomass_index(
+  cpue = NULL,
+  area_swept,
+  catch = NULL,
+  effort = NULL,
+  verbose = getOption("fishr.verbose", default = FALSE),
+  ...
+)
 }
 \arguments{
 \item{cpue}{Numeric vector of CPUE values}
@@ -14,6 +21,8 @@ biomass_index(cpue = NULL, area_swept, catch = NULL, effort = NULL, ...)
 \item{catch}{catch value numeric}
 
 \item{effort}{effort value numeric}
+
+\item{verbose}{Logical, indicating whether to print processing messages (default is FALSE, also accepts value of \code{fishr.verbose})}
 
 \item{...}{arguments passed to cpue}
 }
