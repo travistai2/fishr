@@ -4,7 +4,7 @@
       cpue("five", 10)
     Condition
       Error:
-      ! 'catch' must be numeric, got character.
+      ! Unsupported input type for cpue(): character
 
 # cpue warns when vector lengths don't match
 
