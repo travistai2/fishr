@@ -3,9 +3,10 @@
 #' Calculates biomass from cpue and area fished.
 #'
 #' @param cpue Numeric vector of CPUE values
+#' @param catch Numeric vector of catch (e.g. **kg**) or a data.frame with "catch" and "effort" columns
 #' @param area_swept Numeric vector of area swept (e.g., **km^2^**)
-#' @inheritParams cpue
-#' @inheritDotParams cpue
+#' @inheritParams cpue.numeric
+#' @inheritDotParams cpue.numeric
 #'
 #' @details
 #' Two modes of use
